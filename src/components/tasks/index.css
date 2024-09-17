@@ -1,0 +1,205 @@
+.tasks-container {
+  padding: 0px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.logout-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+
+.logout-popup {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.logout-popup button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-popup button:hover {
+  background-color: #c82333;
+}
+
+.my-tasks {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-date-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.add-task-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-task-button:hover {
+  background-color: #0056b3;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-task-button,
+.delete-task-button {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.edit-task-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.edit-task-button:hover {
+  background-color: #218838;
+}
+
+.delete-task-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-task-button:hover {
+  background-color: #c82333;
+}
+
+.icon-disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.task-icon-with-title {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+  overflow: hidden;
+}
+.task-icon-with-title div {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.icons {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .tasks-container {
+    padding: 0px 10px;
+  }
+
+  .header {
+    align-items: flex-start;
+  }
+
+  .logout-button {
+    margin: 10px 0px;
+  }
+
+  .logout-popup {
+    top: 40px;
+    right: 10px;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .my-tasks {
+    padding: 15px;
+  }
+
+  .task-date-heading {
+    font-size: 16px;
+  }
+
+  .add-task-button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .task-item {
+    padding: 15px;
+  }
+
+  .edit-task-button,
+  .delete-task-button {
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+
+  .task-icon-with-title {
+    gap: 0.5rem;
+  }
+  .task-icon-with-title div {
+    white-space: normal;
+    text-overflow: unset;
+  }
+}
